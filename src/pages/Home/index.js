@@ -1,4 +1,7 @@
+import { Social } from '../../components/Social'
 import './home.css'
+
+import {FaFacebook, FaInstagram, FaYoutube} from 'react-icons/fa'
 
 export default function Home() {
     return(
@@ -22,6 +25,19 @@ export default function Home() {
                     <p className='link-text'>Treinamento Fábrica de Aplicativos</p>
                 </a>
             </section>
+
+            <footer>
+                <Social url="https://facebook.com/sujeitoprogramador">
+                    <FaFacebook size={35} color="#fff"/>
+                </Social>
+                <Social url="https://youtube.com/c/sujeitoprogramador">
+                    <FaYoutube size={35} color="#fff"/>
+                </Social>
+                <Social url="https://instagram.com/sujeitoprogramador">
+                    <FaInstagram size={35} color="#fff"/>
+                </Social>
+            </footer>
+
             </main>
         </div>
     )
